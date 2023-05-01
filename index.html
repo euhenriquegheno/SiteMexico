@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>México</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fonte-titulo cor-especial" href="#">México</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li><a class="nav-link active" aria-current="page" href="#">Início</a></li>
+            <li><a class="nav-link" href="#curiosidade">Curiosidades</a></li>
+            <li><a class="nav-link" href="#cultura">Cultura</a></li>
+            <li><a class="nav-link" href="#economia">Economia</a></li>
+            <li><a class="nav-link" href="#turismo">Turismo</a></li>
+            <li><a class="nav-link" href="#localizacao">Localização</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselExampleCaptions" class="carousel slide" data-interval="3000" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/cancun-cabecalho.jpg" class="d-block w-100 imagem-carrosel" alt="Cancun">
+          <div class="carousel-caption d-none d-md-block h-50">
+            <h1 class="fonte-titulo display-4">Cancún</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/palacio-de-bellas-artes-cabecalho.jpg" class="d-block w-100 imagem-carrosel" alt="Museu do palácio de bellas artes">
+          <div class="carousel-caption d-none d-md-block h-50">
+            <h1 class="fonte-titulo cor-titulo-cabecalho-2 display-4">Museu do palácio de bellas artes</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/Dia de los muertos.jpg" class="d-block w-100 imagem-carrosel" alt="Dia de los muertos">
+          <div class="carousel-caption d-none d-md-block h-50">
+            <h1 class="fonte-titulo cor-titulo-cabecalho-3 display-4">Dia de los muertos</h1>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="texto">
+      <h2 class="text-center fonte-titulo cor-especial pt-5">Diversas caracteristicas e curiosidades sobre a México!</h2>
+      <p class="text-center text-secondary pb-5">Nossos pontos turisticos, bandeira, cultura, enconomia, entre outros...</p>
+    </div>
+
+    <section id="curiosidade" class="container-fluid bg-light">
+      <div class="row justify-content-center">  
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img src="assets/Bandeira.jpg" class="card-img-top card-posicao-imagem" alt="bandeira do mexico">
+          <div class="card-body">
+            <h5 class="card-title">Bandeira</h5>
+            <p class="card-text">É formada por um fundo com três listras coloridas: verde, branca e vermelha...</p>
+            <a class="btn botao-cor-especial" data-bs-toggle="modal" data-bs-target="#modal-bandeira" href="#">Detalhes</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img src="assets/mexico.jpg" class="card-img-top card-posicao-imagem" alt="dados gerais do mexico">
+          <div class="card-body">
+            <h5 class="card-title">Dados Gerais</h5>
+            <p class="card-text">Capital: Cidade do México. Extensão territorial: 1.964.375 quilômetros quadrados com 130.262.000 habitantes...</p>
+            <a class="btn botao-cor-especial" data-bs-toggle="modal" data-bs-target="#modal-dados-gerais" href="#">Detalhes</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cultura">
+      <h2 class="fonte-titulo titulo-cultura">Cultura</h2>
+      <div class="texto-cultura">
+        <ul class="lista-cultura">
+          <li class="itens"> <strong>Dia de los muertos</strong>
+            <p> Realizada entre <strong>1 e 2 de novembro</strong>, data em que, segundo a tradição local, <strong>os mortos podem visitar suas famílias vivas</strong>, essa é uma das tradições mais famosas da cultura mexicana.
+            <p> Foi até retratada em filmes de animação americanos como Coco (2017). Esta festa é celebrada com danças, desfiles, comidas típicas (pan de muertos, caveiras) e    decorações alusivas à morte (catrinas).</p>
+          </li>
+          <li class="itens"> <strong>Os mariachis</strong>
+            <p>Tradicionalmente vestidos com uma fantasia de “charro” (cavaleiro), que geralmente acompanham celebrações como o Dia das Mães. Também atuam nas celebrações da Virgem de Guadalupe, festivais familiares ou serenatas.</p>
+            <p>A Plaza Garibaldi, na Cidade do México, é onde os Mariachias estão sempre disponíveis para contratação imediata pelos transeuntes.</p>
+          </li>
+          <li class="itens"><strong>Luta livre</strong>
+            <p>O objetivo é derrubar o oponente por três segundos, contados pelo juiz com tapas no chão.</p>
+            <p>Mas até que ponto é coreografia e ensaio e até que ponto há realmente uma competição é difícil dizer.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="imagens-cultura container-fluid">
+        <div class="row justify-content-center"> 
+          <article class="card card-largura p-0 m-4 col-12 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/Vestimenta.jpg" class="card-img-top card-posicao-imagem" alt="vestimenta mexicana">
+              <div class="card-body">
+                <p class="card-text"><strong>VESTIMENTAS:</strong></p>
+                <p> Incluem os <strong>trajes diários e os tradicionais</strong>. As roupas diárias para as mulheres normais são <strong>blusa e saia na altura do tornozelo ou joelho</strong>. Também usam uma <strong>túnica sem mangas</strong>, chamada de huipil e um tipo de xale, chamado de rebozo.</p>
+                <p>A moda masculina <strong>cotidiana é camisa, calças, botas, sombrero e uma capa grande, chamada de sarape</strong>.</p>
+                <p>Os <strong>trajes tradicionais</strong> do México eram <strong>usados em férias e ocasiões especiais</strong>. O traje inclui o vestido de puebla, o quechquemitl e o traje de charro.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-largura p-0 m-4 col-12 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/dancas.jpg" class="card-img-top card-posicao-imagem" alt="dança mexicana">
+              <div class="card-body">
+                <p class="card-text"><strong>DANÇA:</strong></p>
+                <p><strong>SALSA:</strong> Em castelhano quer dizer tempero, e a adoção do termo quis dizer que é uma música com “sabor”. Uma mistura de diversos ritmos latinos e mexicanos, a salsa teve origem em Cuba na década de 40.</p>
+                <p><strong>CHÁ-CHÁ-CHÁ:</strong>Originada no México, dançada ao ritmo do estilo musical de mesmo nome, o Chá-chá-chá traz um ritmo mais animado à pista de dança. É uma dança mais caliente, aonde a expressão corporal é muito presente.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-largura p-0 m-4 col-12 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/Frida-Kahlo.jpg" class="card-img-top card-posicao-imagem" alt="frida kahlo">
+              <div class="card-body">
+                <p class="card-text"><strong>FRIDA KAHLO:</strong></p>
+                <p>Grande pintora mexicana conhecida por seus autorretratos de inspiração surrealista e também por suas fotografias. Nasceu na vila de Coyoacán, no México, no dia 6 de julho de 1907.</p>
+                <p>Frida passou a pintar sua imagem, com um espelho pendurado na sua frente e um cavalete adaptado para que pudesse pintar deitada. Dizia:</p>
+                <p><i>“Para que preciso de pés quando tenho asas para voar”</i></p>
+                <p>Sua primeira pintura foi “Autorretrato em um Vestido de Veludo”, dedicado a Alejandro Gómez Arias, seu ex-noivo.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="economia">
+      <h2 class="fonte-titulo titulo-economia">Economia</h2>
+        <ul class="lista-economia">
+          <li class="itens"> A moeda é o peso mexicano:
+            <p><strong>1 peso mexicano = R$ 0,28 reais brasileiros</strong></p>
+            <p><strong>1 peso mexicano = US$ 0,055 dólar americano</strong></p>
+          </li>
+          <li class="itens"> Tem uma economia de livre mercado voltada para a exportação.</li>
+          <li class="itens"> É a segunda maior economia da América Latina.</li>
+        </ul> 
+    </section>
+
+    <section id="turismo" class="bg-light">
+      <h2 class="fonte-titulo titulo-turismo">Turismo</h2>
+      <div class="imagens-turismo container-fluid">
+        <div class="row justify-content-center"> 
+          <article class="card card-largura p-0 m-4 col-12 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/Palacio Frida.jpg" class="card-img-top card-posicao-imagem" alt="museu da frida kahlo">
+              <div class="card-body">
+                <p class="card-text"><strong>Museu da frida kahlo</strong>
+                  Poucos artistas no mundo representam tanto a cultura do seu país como a pintora. Durante a visita, é possível conhecer o ateliê onde Frida realizava suas pinturas. 
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-largura p-0 m-4 col-12 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/cancun.jpg" class="card-img-top card-posicao-imagem" alt="cancun">
+              <div class="card-body">
+                <p class="card-text"><strong>Cancún:</strong> Situada no litoral do México, Cancún ficou muito famosa como um destino de viagem de lua de mel, por conta de seus resorts luxuosos e praias paradisíacas.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-largura p-0 m-4 col-12 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/museu-do-palacio-de-bellas-artes.jpg" class="card-img-top card-posicao-imagem" alt="pálacio de bellas artes">
+              <div class="card-body">
+                <p class="card-text"><strong>Palacio de Bellas Artes</strong> Um dos prédios mais bonitos não só do centro, mas de toda a cidade, é o Palacio de Bellas Artes, um teatro de ópera construído no começo do século XX.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao">
+      <h2 class="fonte-titulo titulo-localizacao">Localização</h2>
+      <div class="mapa-franca" style="text-align: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30199260.533700686!2d-120.8879013106157!3d22.48792540625639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1spt-BR!2sbr!4v1682970989339!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; border-radius: 20px; margin-bottom: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-12 col-md-4"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-light p-3">
+    <p class="copyright text-secondary m-0 text-center">&copy; Copyright Esi sem fronteiras México - 2023</p>  
+  </footer>
+
+<!-- Modal -->
+  <div class="modal fade" id="modal-bandeira" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bandeira</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body">
+          <form>
+            <p>É formada por um fundo com três listras coloridas: verde, branca e vermelha, além de um escudo, composto pelo desenho de uma águia e uma serpente.<br>
+              <strong>Faixa vermelha:</strong> Sangue derramado nos conflitos de independência do país.<br>
+              <strong>Faixa branca:</strong> Unidade do povo mexicano.<br></p>
+              <strong>Faixa verde:</strong> Esperança.<br></p>
+              <p>O significado remete a elementos tradicionais, como a águia, a serpente, e os cactos, luta do povo mexicano pelo seu território, evidenciada justamente pela batalha entre a águia\e a serpente.
+            </p>
+              <div class="imagens-cultura container-fluid">
+                <div class="row justify-content-center"> 
+                    <h5>Bandeira Mexicana</h5>
+                      <img src="assets/Bandeira.jpg" class="card-largura" alt="bandeira do mexico" style="border-radius:  35px;">
+                </div>
+              </div>
+          </form>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </footer>
+      </dialog>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-dados-gerais" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Dados Gerais</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body">
+          <form>
+            <ul class="lista-dados-gerais">
+              <li class="itens"> <strong>Capital:</strong> Cidade do México</li>
+              <li class="itens"> <strong>Extensão Territorial:</strong> 1.964.375 Km²</li>
+              <li class="itens"> <strong>Habitantes:</strong> 130.262.000 Habitantes(Dados de 2015)</li>
+              <li class="itens"> <strong>Idioma:</strong> Espanhol</li>
+              <li class="itens"> <strong>Religião:</strong> Catolicismo</li>
+              <li class="itens"> <strong>Moeda:</strong> Peso mexicano</li>
+            </ul>
+          </form>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </footer>
+      </dialog>
+    </div>
+  </div>
+
+  <script src="bootstrap-5.1.3/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>
